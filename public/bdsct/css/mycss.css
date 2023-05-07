@@ -1,0 +1,87 @@
+.body
+{
+    background-color: aqua;
+}
+.news>.subnew
+{
+       padding:10px 10px 20px 10px;
+       border-style: 1px solid red;
+}
+/* Flashing */
+ .flash:hover{
+	opacity: 0;
+	-webkit-animation: flash 0.5s;
+	animation: flash 0.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.nhapnhay {
+       
+    font-size:25px;
+    font-weight:bold;
+-webkit-animation: my 700ms infinite;
+-moz-animation: my 700ms infinite; 
+-o-animation: my 700ms infinite; 
+animation: my 700ms infinite;
+}
+
+
+
+
+@-webkit-keyframes my {
+    0% { color: #f81a0a; } 
+    50% { color: #fff;  } 
+    100% { color:#f81a0a;  } 
+}
+@-moz-keyframes my { 
+    0% { color: #f81a0a;  } 
+    50% { color: #fff;  }
+    100% { color: #f81a0a;  } 
+}
+@-o-keyframes my { 
+    0% { color: #f81a0a; } 
+    50% { color: #fff; } 
+    100% { color: #f81a0a;  } 
+}
+@keyframes my { 
+    0% { color: #f81a0a;  } 
+    50% { color: #fff;  }
+    100% { color: #f81a0a;  } 
+    
+} 
+
+.bv_title
+{
+    height:80px;
+}
+.title_hot_sales
+{
+    height: 25px;
+}
+.dat_coc
+{
+font-family: 'Courier New', Courier, monospace;
+color:#f81a0a;
+position: absolute;
+margin-top: 150px;
+margin-left: 150px;
+font-weight: 100px;
+font-style: oblique;
+font-size: x-large;
+}

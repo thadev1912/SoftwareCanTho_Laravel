@@ -1,0 +1,23 @@
+.main-menu ul li
+{
+float: left;
+list-style: none;
+}
+.sub-menu 
+{
+     background-color: blueviolet;
+}
+.sub-menu li
+{
+    padding: 10px;
+    background-color: aqua;
+    border-width: 1px;
+    color: brown;
+}
+a
+{
+ text-decoration:  none;   
+ color: chocolate;
+ 
+}
+

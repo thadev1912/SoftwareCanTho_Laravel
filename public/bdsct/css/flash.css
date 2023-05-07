@@ -1,0 +1,38 @@
+.logo-flash
+{
+    position:relative;
+    width:500px;
+    margin:0 auto;
+    overflow:hidden
+
+}
+.logo-flash:before
+ {
+    content: "";
+    position: absolute;
+    left: -1200px;  /*điểm xuất phát theo tọa đọ x*/
+    top: 200px;/*điểm xuất phát theo tọa đọ y*/
+    width: 1800px; /*chiều dài cây quét*/
+    height: 20px;
+    background: linear-gradient(
+		to right, 
+		rgba(248, 219, 219, 0.13) 0%,
+		rgba(255, 255, 255, 0.13) 77%,
+		rgba(255, 255, 255, 0.5) 92%,
+		rgba(255, 255, 255, 0.0) 100%
+	);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: searchLights 1.5s ease-out 1.5s infinite;
+    -o-animation: searchLights 1.5s ease-out 1.5s infinite;
+    animation: searchLights 1.5s ease-out 1.5s infinite;
+}
+    @keyframes searchLights 
+    {
+        0%
+        { left: -1200px;top: 0;}
+         to{left: 0px;top:200;}
+        }
